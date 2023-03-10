@@ -1,0 +1,6 @@
+Flask
+requests
+flask-cors
+waitress
+PyYAML
+jsonpickle
