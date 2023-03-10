@@ -11,19 +11,20 @@
 
 1.  clone这个repo
 2.  创建虚拟环境并激活，然后安装依赖
+##### Windows Powershell (不建议使用别的命令行工具)
 ``` Windows Powershell
 python -m venv venv
 venv/Scripts/Activate.ps1
 python -m pip install -r requirements.txt
 ```
-
-``` Linux
+##### Linux Shell
+``` Linux Shell
 python -m venv venv
 source venv/bin/acticate
 python -m pip install -r requirements.txt
 ```
 3.  修改 app.py 成你自己的逻辑
-4.  修改start.bat和start.sh中的脚本路径和脚本名称并根据不同的系统允许不同的脚本
+4.  修改start.bat和start.sh中的脚本路径和脚本名称并根据不同的系统运行不同的脚本(windows下运行bat，linux下运行sh)
 
 #### 参与贡献
 
