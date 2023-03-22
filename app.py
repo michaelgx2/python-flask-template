@@ -33,10 +33,10 @@ def post_me():
 # 下面的不用管
 # ----------------------------------------------------------    
 def ok(msg = "操作成功", data = None):
-    return jsonpickle.encode({"msg": msg, "errcode": 0, "data": data})
+    return Response(jsonpickle.encode({"msg": msg, "errcode": 0, "data": data}), content_type="application/json;charset=utf-8")
 
 def fail(msg = "操作失败", data = None, error_code = -1):
-    return jsonpickle.encode({"msg": msg, "errcode": error_code, "data": data})
+    return Response(jsonpickle.encode({"msg": msg, "errcode": -1, "data": data}), content_type="application/json;charset=utf-8")
 
 def get_validated_json(required_params=None, default_params=None):
     """
